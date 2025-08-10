@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2c3e50; /* Darker background for contrast */
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Added font for better readability */
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: 2px solid #34495e; /* Added border for better visibility */
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  font-size: 8vmin;
+  color: #e74c3c; /* Changed text color for better contrast */
+  background-color: #ecf0f1; /* Lighter background for boxes */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+.box:hover {
+  background-color: #f39c12; /* Changed hover color for better visibility */
+  cursor: pointer;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#reset-btn, #new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #2980b9; /* Changed button color */
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  transition: background-color 0.3s; /* Smooth transition for buttons */
+}
+
+#reset-btn:hover, #new-btn:hover {
+  background-color: #3498db; /* Lighter button color on hover */
+}
+
+#msg {
+  color: #ecf0f1; /* Changed message color for better visibility */
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
