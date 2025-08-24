@@ -4,9 +4,8 @@
 }
 
 body {
-  background-color: #2c3e50; /* Darker background for contrast */
+  background-color: #548687;
   text-align: center;
-  font-family: 'Arial', sans-serif; /* Added font for better readability */
 }
 
 .container {
@@ -25,41 +24,58 @@ body {
   align-items: center;
   gap: 1.5vmin;
 }
+h1 {
+  color: #6b3b4a;
+  padding: 15px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+h1:hover {
+  color: #262626;
+  box-shadow: 0 4px 15px rgba(255, 0, 79, 0.6);
+}
+
 
 .box {
   height: 18vmin;
   width: 18vmin;
   border-radius: 1rem;
-  border: 2px solid #34495e; /* Added border for better visibility */
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   font-size: 8vmin;
-  color: #e74c3c; /* Changed text color for better contrast */
-  background-color: #ecf0f1; /* Lighter background for boxes */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+  color: #b0413e;
+  background-color: #ffffc7;
 }
 
 .box:hover {
-  background-color: #f39c12; /* Changed hover color for better visibility */
+  background-color: #f0e68c;
   cursor: pointer;
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  border-radius: 1.2rem;
+  border-color: #000000;
 }
 
-#reset-btn, #new-btn {
+#reset-btn {
   padding: 1rem;
   font-size: 1.25rem;
-  background-color: #2980b9; /* Changed button color */
+  background-color: #191913;
   color: #fff;
   border-radius: 1rem;
   border: none;
-  transition: background-color 0.3s; /* Smooth transition for buttons */
 }
 
-#reset-btn:hover, #new-btn:hover {
-  background-color: #3498db; /* Lighter button color on hover */
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
 }
 
 #msg {
-  color: #ecf0f1; /* Changed message color for better visibility */
+  color: #ffffc7;
   font-size: 5vmin;
 }
 
@@ -74,4 +90,17 @@ body {
 
 .hide {
   display: none;
+}
+.copyright {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #5c97c7;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.copyright i {
+  color: #ff004f;
 }
